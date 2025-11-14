@@ -6,7 +6,7 @@
 /*   By: dtanski <dtanski@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 19:56:03 by dtanski           #+#    #+#             */
-/*   Updated: 2025/07/18 19:24:44 by dtanski          ###   ########.fr       */
+/*   Updated: 2025/11/14 20:03:29 by dtanski          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& src)
 {
 	if (this != &src)
 	{
+		// Slicing
 		ClapTrap::operator=(src);
 	}
 	return (*this);
