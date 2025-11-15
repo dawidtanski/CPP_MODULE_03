@@ -6,7 +6,7 @@
 /*   By: dtanski <dtanski@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 19:29:45 by dtanski           #+#    #+#             */
-/*   Updated: 2025/11/14 20:18:43 by dtanski          ###   ########.fr       */
+/*   Updated: 2025/11/15 16:11:57 by dtanski          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,11 @@ class ScavTrap : virtual public ClapTrap
 
 		void attack(const std::string& target);
 		void guardGate();
+
+	protected:
+		static const unsigned int _initHitPoints = 100;
+		static const unsigned int _initEnergyPoints = 50;
+		static const unsigned int _initAttackDamage = 20;
 };
 
 

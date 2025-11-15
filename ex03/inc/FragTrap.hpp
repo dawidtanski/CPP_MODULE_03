@@ -6,7 +6,7 @@
 /*   By: dtanski <dtanski@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/18 18:55:19 by dtanski           #+#    #+#             */
-/*   Updated: 2025/07/28 18:44:51 by dtanski          ###   ########.fr       */
+/*   Updated: 2025/11/15 16:11:57 by dtanski          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,10 @@ class FragTrap : virtual public ClapTrap
 
 		void highFivesGuys(void);
 
+	protected:
+		static const unsigned int _initHitPoints = 100;
+		static const unsigned int _initEnergyPoints = 100;
+		static const unsigned int _initAttackDamage = 30;
 };
 
 #endif
